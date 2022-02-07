@@ -117,12 +117,16 @@
     }
     .home {
         align-items: center;
+       
      
     }
     .home .myhome{
-        margin-right:20rem;
-        margin-left: -4rem;
       
+        margin-right:5rem;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left:.5rem;
+        text-align: left;
+        
         
         
        
@@ -221,7 +225,7 @@
     .home .myhome{
         margin-right:5rem;
         font-family: 'Courier New', Courier, monospace;
-        margin-left:0rem;
+        margin-left:.5rem;
         text-align: left;
         
        
