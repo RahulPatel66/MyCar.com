@@ -1,0 +1,114 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url(../images/img1.jpeg);
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: aquamarine;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background:url(../images/img2.jpg);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+.avtar{
+    width: 100px;
+    height: 100px;
+    margin-left: 25%;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: calc(50% -50%);
+
+}
+h1{
+    margin: 0%;
+    padding: 0 0 22px;
+    text-align: center;
+    font-size: 25px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0%;
+    font-weight: bold;
+
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="email"],input[type="password"]
+{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background:transparent;
+    outline: none;
+    color: blanchedalmond;
+    height: 40px;
+    font-size: 15px;
+
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: blue;
+    color: bisque;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc10f;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.loginbox a:hover{
+ color:yellow;
+}
+
+.myclassis{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    position: fixed;
+    
+    bottom: 5rem;
+    color: rgb(151, 133, 133);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    
+    /* background-color: yellow; */
+}
+
+
+@media (max-width:320px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        background:none;
+    }
+    .loginbox{
+        
+        padding: 1rem;
+    
+    }
+}

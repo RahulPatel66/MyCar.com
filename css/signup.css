@@ -1,0 +1,120 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url(../images/img1.jpeg);
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: aquamarine;
+    box-sizing: border-box;
+    align-items: center;
+}
+.first{
+   
+    margin-top: 2%;
+    background:url(../images/img2.jpg);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+   
+
+}
+.image{
+    width: 100px;
+    height: 100px;
+    margin-left: 33%;
+    border-radius: 50%;
+    position: absolute;
+    top: -5%;
+    left: calc(50% -50%);
+}
+.first h2{
+    text-align: center;
+}
+.first p{
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+   
+
+}
+.first input{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.first input[type="text"],input[type="email"],input[type="password"],input[type="password"],input[type="number"],input[type="number"]
+{
+    
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:transparent;
+    outline: none;
+    color: blanchedalmond;
+    height: 25px;
+    font-size: 15px;
+
+}
+.first input[type="submit"]{
+    background-color: blue;
+    color: blanchedalmond;
+    height: 40px;
+    font-size: 19px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 20%;
+}
+.first input[type="submit"]:hover{
+    cursor: pointer;
+   color:black;
+   background-color: chartreuse;
+}
+.second a{
+  text-align: right;
+  margin-left: 5%;
+  font-size: 17px;
+  color: #fff;
+  
+}
+.first a{
+    color: blanchedalmond;
+    font-size: 17px;
+
+}
+.first a:hover {
+    color: chartreuse;
+
+
+}
+
+@media (max-width:320px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        background:none;
+    }
+    .first{
+        width: 100%;
+        height: 100%;
+        margin-top: 0%;
+        background:black;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding:1rem;
+       
+    
+    }
+    .first h2{
+        font-size: 2rem;
+    }
+    .first img{
+        display: none;
+    }
+}

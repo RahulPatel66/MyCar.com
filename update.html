@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="./images/mycarxyz.jpg">
+    <title>My Car.com</title>
+    <link rel="stylesheet" href="./css/update.css">
+</head>
+<body>
+     <div class="loginbox">
+                <img src="images/img4.jpeg" alt="logo" class="avtar">
+               <u> <h1>Forgote Password</h1></u>
+                <form onsubmit="return num1()" action="/update" method="post" name="myform" >
+                    <p>Enter Email Here</p>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                     <p>Enter Number Here</p>
+                    <input type="number" name="number" placeholder="Enter Mobile Number" required>
+                    <p>New Password</p>
+                    <input type="password" name="password" placeholder="Enter New Password Here" required>
+                    <p>Re-enter Password</p>
+                    <input type="password" name="repassword" placeholder="Re-enter Password Here" required><br>
+                    <input type="submit" value="Submit" class="first" onclick="return num">
+                    <!-- {{!-- <a href="#">Lost your Password?</a> --}} -->
+                    
+                    <a href="./index.html">Go To Home Page</a>
+                    <a href="./login.html" >Go To Login Page</a><br><br>
+                </form>
+            </div>
+           <script>
+        function num1()
+         {
+             var y = document.myform.number.value;
+              if(y.length>10||y.length<10){
+                    alert("Please enter valid number ");  
+                     return false;
+                    }
+         }
+
+      function num()  
+      {  
+          var x=document.myform.email.value;  
+          var atposition=x.indexOf("@");  
+          var dotposition=x.lastIndexOf(".");
+           
+          if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length ){  
+           alert("Please enter a valid e-mail address \n atposition:"+atposition+"\n dotposition:"+dotposition);  
+              return false;  
+            } 
+      }  
+           </script>
+</body>
+</html>

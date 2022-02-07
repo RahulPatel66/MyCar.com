@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+     <link rel="shortcut icon" href="./images/mycarxyz.jpg">
+    <title>My Car.com</title>
+    <link rel="stylesheet" href="./css/login.css">
+ 
+</head>
+<body>
+          
+            <div class="loginbox">
+                <img src="./images/img4.jpeg" alt="logo" class="avtar">
+               <u> <h1>Login</h1></u>
+                <form name="myform" action="/log" method="post" onsubmit="return email()" >
+                    <p>Username</p>
+                    <input type="email" name="email" placeholder="Enter Email ID" >
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Enter Password" >
+                    <p class="p"></p>
+                    <input type="submit" value="Login" class="first" >
+                    <a href="./update.html">Lost your Password?</a>
+                    <a href="./signup.html" >Don't have an account?</a><br><br>
+                    <a href="./index.html">Go To Home Page</a>
+                  
+                </form>
+            </div>
+<script>
+          function email()  
+         {  
+                 var x=document.myform.email.value;  
+                 var atposition=x.indexOf("@");  
+                 var dotposition=x.lastIndexOf("."); 
+                 if(x==""){
+                     alert("please Enter email");
+                     return false;
+                 }
+                 if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length ){  
+                     alert("Please enter a valid e-mail address \n atposition:"+atposition+"\n dotposition:"+dotposition);  
+                      return false;   
+                 } 
+                 var y = document.getElementsByName("password").value;
+                 if(y=="")
+                 {
+                       alert("please Enter pssword");
+                     return false;
+                 }
+        }  
+ </script>
+          
+</body>
+</html>

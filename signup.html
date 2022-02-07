@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/mycarxyz.jpg">
+    <title>My Car.com</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <script>
+      function num()
+      {
+          var y = document.myform.number.value;
+          if(y.length>10||y.length<10){
+           alert("Please enter valid number ");  
+           return false;
+            
+          }
+      }
+      
+     function num1()
+     {
+       var z = document.myform.password.value;
+       if(z.length<5){
+         alert("please enter password grater then 6 character");
+         return false;
+       }
+     }
+      function num2()  
+      {  
+          var x=document.myform.email.value;  
+          var atposition=x.indexOf("@");  
+          var dotposition=x.lastIndexOf("."); 
+           if (atposition<1 || dotposition<atposition+2 || dotposition+3>=x.length){  
+              alert("Please enter a valid e-mail address  atpostion:"+atposition+" dotposition:"+dotposition);  
+               return false;  
+            }   
+          
+          
+      }  
+
+    </script>
+</head>
+<body>
+     <div class="first">
+       <img src="./images/img4.jpeg" alt="logo" class="image">
+       <u><h2>Registration form</h2></u>
+       <form  name="myform" action="/add" method="post" onsubmit="return num()" onsubmit="return num1()" >
+           <p>Username :</p>
+           <input type="text" name="uname" placeholder="Enter Your Username" required>
+           <p>Email :</p>
+           <input type="email" name="email" placeholder="Enter Your Email" required  >
+           <p>Password :</p>
+           <input type="password" name="password" placeholder="Enter Your Password" required>
+           <p>re-enter Password :</p>
+           <input type="password" name="repassword" placeholder="Re-Enter password" required >
+           <p>Phone number</p>
+           
+           <input type="number" name="number" id="number" placeholder="Enter Your Number Here" required>
+           
+            
+            <input type="submit"  value="Submit Now" onclick="return num2()" ><br>
+            <div class="second" >  <a href="./index.html">Go To Home Page</a><a href="./login.html" >Already have account</a></div>
+        
+            
+          
+           
+       </form>
+    </div>
+    
+</body>
+</html>
