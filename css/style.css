@@ -209,7 +209,7 @@ body{
 /* main section start from here  */
 
 .mainpage{
-    background-image: url(../images/car.jpeg);
+    background-image: url('../images/car.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
